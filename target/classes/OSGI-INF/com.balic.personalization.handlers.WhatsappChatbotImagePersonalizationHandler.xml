@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.balic.personalization.handlers.WhatsappChatbotImagePersonalizationHandler" immediate="true">
+  <implementation class="com.balic.personalization.handlers.WhatsappChatbotImagePersonalizationHandler"/>
+  <service>
+    <provide interface="com.shaft.framework.channel.RequestHandler"/>
+  </service>
+  <reference name="commandProcessService" interface="com.shaft.magick.services.CommandProcessService" field="commandProcessService"/>
+  <property name="shaft.handler.serviceType" type="String" value="balic-whatsappchatbot"/>
+  <property name="shaft.handler.selector" type="String" value="whatsapp-chatbot-img-personalization"/>
+  <property name="shaft.handler.httpMethod" type="String" value="POST"/>
+  <property name="shaft.handler.protocol" type="String" value="json"/>
+</scr:component>

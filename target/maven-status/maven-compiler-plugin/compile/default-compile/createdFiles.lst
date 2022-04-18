@@ -1,0 +1,4 @@
+com\balic\personalization\channels\BalicWhatsappChatbotChannelProvider$Config.class
+com\balic\personalization\channels\BalicWhatsappChatbotChannelProvider.class
+com\balic\personalization\handlers\WhatsappChatbotImagePersonalizationHandler.class
+com\balic\personalization\SimpleDSComponent.class

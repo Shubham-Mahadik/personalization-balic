@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.balic.personalization.channels.BalicWhatsappChatbotChannelProvider" immediate="true" activate="activate" modified="activate">
+  <implementation class="com.balic.personalization.channels.BalicWhatsappChatbotChannelProvider"/>
+  <service>
+    <provide interface="com.shaft.framework.channel.ChannelProvider"/>
+  </service>
+  <reference name="serviceFactory" interface="com.shaft.framework.channel.ServiceFactory" field="serviceFactory"/>
+  <property name="fundImageTemplatePath" type="String" value="/opt/balic/whatsappchatbot/src-imgs/fund-template.png"/>
+  <property name="policyImageTemplatePath" type="String" value="/opt/balic/whatsappchatbot/src-imgs/policy-template.png"/>
+  <property name="shaft.channel.name" type="String" value="balic-whatsappchatbot"/>
+  <property name="personaliseImageTemplatePath" type="String" value="/opt/balic/whatsappchatbot/dest-imgs/"/>
+</scr:component>

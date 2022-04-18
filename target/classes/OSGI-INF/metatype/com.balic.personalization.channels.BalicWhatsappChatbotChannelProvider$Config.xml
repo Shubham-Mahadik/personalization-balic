@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.balic.personalization.channels.BalicWhatsappChatbotChannelProvider$Config">
+  <OCD id="com.balic.personalization.channels.BalicWhatsappChatbotChannelProvider$Config" name="Balic Whatsapp Chatbot Configuration" description="">
+    <AD id="policyImageTemplatePath" type="String" name="Policy Image Template Path" description="Policy Image Path is provided here" default="/opt/balic/whatsappchatbot/src-imgs/policy-template.png"/>
+    <AD id="fundImageTemplatePath" type="String" name="Fund Image Template Path" description="Fund Image template is provided here" default="/opt/balic/whatsappchatbot/src-imgs/fund-template.png"/>
+    <AD id="personaliseImageTemplatePath" type="String" name="Personalised Image Path" description="Personalised Image Path is provided here" default="/opt/balic/whatsappchatbot/dest-imgs/"/>
+  </OCD>
+  <Designate pid="com.balic.personalization.channels.BalicWhatsappChatbotChannelProvider">
+    <Object ocdref="com.balic.personalization.channels.BalicWhatsappChatbotChannelProvider$Config"/>
+  </Designate>
+</metatype:MetaData>
